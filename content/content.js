@@ -57,28 +57,16 @@ var capture = (force) => {
         chrome.runtime.sendMessage({
           message: 'capture', area: selection, dpr: devicePixelRatio
         }, (res) => {
-          overlay(false)
+        
+          $('.jcrop-holder').addClass('spinner');
+          $('.jcrop-holder').addClass('text-extraction');
           selection = null
-          save(res.image, config.format)
+          // $('.jcrop-holder').removeClass('spinner');
         })
       }, 50)
     } 
   })
 }
-
-var filename = (format) => {
-  var pad = (n) => (n = n + '', n.length >= 2 ? n : `0${n}`)
-  var ext = (format) => format === 'jpeg' ? 'jpg' : format === 'png' ? 'png' : 'png'
-  var timestamp = (now) =>
-    [pad(now.getFullYear()), pad(now.getMonth() + 1), pad(now.getDate())].join('-')
-    + ' - ' +
-    [pad(now.getHours()), pad(now.getMinutes()), pad(now.getSeconds())].join('-')
-  return `Screenshot Capture - ${timestamp(new Date())}.${ext(format)}`
-}
-
-var save = (image, format) => {
-  //delete
-};
 
 window.addEventListener('resize', ((timeout) => () => {
   clearTimeout(timeout)
@@ -101,6 +89,11 @@ chrome.runtime.onMessage.addListener((req, sender, res) => {
       overlay()
       capture(true)
     }
+  }
+  else if(req.message === 'loaded') {
+    overlay(false)
+    $('.jcrop-holder').removeClass('spinner');
+    $('.jcrop-holder').removeClass('text-extraction');
   }
   return true
 })

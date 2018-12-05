@@ -163,3 +163,16 @@ code { background: #ececec; padding: 5px 8px; border-radius: 3px; }
   top: -1px;
   padding: 0 10px 0 0;
 }
+
+.center-me {
+  padding: 25px;  
+  margin: 0 auto;
+  width: 420px;
+}
+
+.center-me-bottom {
+  position: relative;
+  bottom: 15px;
+  margin: 100px auto 0 auto;
+  width: 620px;
+}

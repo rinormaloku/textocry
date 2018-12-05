@@ -16,3 +16,37 @@ img#fake-image {
   position: fixed !important; top: 0 !important; left: 0 !important;
   z-index: 2147483647 !important;
 }
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner .6s linear infinite;
+}
+
+.text-extraction:after {
+  content: 'Text is being loaded into your clipboard';
+  box-sizing: border-box;
+  position: absolute;
+  top: 55%;
+  left: calc(50% - 125px);
+  width: 250px;
+  /* border: solid 2px black; */
+  background-color: rgba(0,0,0, 0.75);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
