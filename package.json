@@ -1,0 +1,35 @@
+{
+  "name": "textocry",
+  "version": "0.0.1",
+  "description": "Extract text from images and load into clipboard",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -wp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinormaloku/textocry.git"
+  },
+  "keywords": [
+    "OCR",
+    "Text",
+    "extraction",
+    "Clipboard",
+    "optical",
+    "character",
+    "recognition"
+  ],
+  "author": "Rinor Maloku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rinormaloku/textocry/issues"
+  },
+  "homepage": "https://github.com/rinormaloku/textocry#readme",
+  "devDependencies": {
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "tesseract.js": "^1.0.14"
+  }
+}
