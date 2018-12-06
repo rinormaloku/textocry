@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) 2014-present Simeon Velichkov <simeonvelichkov@gmail.com>
-(https://github.com/simov/screenshot-capture)
+Copyright (c) 2018-present Rinor Maloku <rinormaloku@gmail.com>
+(https://github.com/rinormaloku/textocry)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
