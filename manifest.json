@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-  "name"            : "Textocry",
+  "name"            : "Textocry - copy text from images",
   "version"         : "0.0.1",
-  "description"     : "Extract text from images and load into clipboard",
+  "description"     : "Copy text from images with Optical Character Recognition",
 
   "browser_action": {
     "default_icon": {
       "19" : "/images/icon19.png",
       "38" : "/images/icon38.png"
     },
-    "default_title": "Textocry - crop text from images"
+    "default_title": "Textocry - copy text from images"
   },
 
   "options_page": "/content/options.html",

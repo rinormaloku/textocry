@@ -65,18 +65,13 @@ chrome.runtime.onMessage.addListener((req, sender, res) => {
         if (req.active) {
             chrome.storage.sync.get((config) => {
                 if (config.method === 'crop') {
-                    chrome.browserAction.setTitle({ tabId: sender.tab.id, title: 'Crop and Save' })
-                    chrome.browserAction.setBadgeText({ tabId: sender.tab.id, text: '◩' })
-                }
-                //DELETE todo
-                else if (config.method === 'wait') {
-                    chrome.browserAction.setTitle({ tabId: sender.tab.id, title: 'Crop and Wait' })
-                    chrome.browserAction.setBadgeText({ tabId: sender.tab.id, text: '◪' })
+                    chrome.browserAction.setTitle({ tabId: sender.tab.id, title: 'Select region' })
+                    chrome.browserAction.setBadgeText({ tabId: sender.tab.id, text: '⯐' })
                 }
             })
         }
         else {
-            chrome.browserAction.setTitle({ tabId: sender.tab.id, title: 'Screenshot Capture' })
+            chrome.browserAction.setTitle({ tabId: sender.tab.id, title: 'Copy text from image' })
             chrome.browserAction.setBadgeText({ tabId: sender.tab.id, text: '' })
         }
     }
@@ -117,7 +112,9 @@ function crop(image, area, dpr, preserve, format, tab, done) {
             .then(function (result) {
 
                 document.oncopy = function (event) {
-                    event.clipboardData.setData('text/plain', result.text + '\nSubscribe to pewdiepie https://www.youtube.com/user/PewDiePie \nOr help children in india: https://www.cry.org');
+                    event.clipboardData.setData('text/plain', result.text 
+                    // + '\nSubscribe to pewdiepie https://www.youtube.com/user/PewDiePie \nOr help children in india: https://www.cry.org'
+                    );
                     event.preventDefault();
                 };
                 document.execCommand("copy", false, null);
