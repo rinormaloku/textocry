@@ -46,7 +46,7 @@ This tool is build with help of:
 
 ## Feedback
 
-* Request a new feature or file bugs on [GitHub](https://github.com/rinormaloku/textocry/issues/new).
+* Request features or file bugs on [GitHub](https://github.com/rinormaloku/textocry/issues/new).
 * Write in our [Google Group](https://groups.google.com/forum/#!forum/textocry).
 * [Tweet](https://twitter.com/rinormaloku) me about any other feedback.
 
