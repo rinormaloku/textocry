@@ -1,6 +1,6 @@
 {
   "name": "textocry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract text from images and load into clipboard",
   "main": "index.js",
   "scripts": {

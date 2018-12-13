@@ -11,7 +11,7 @@ As a developer you don't always find the code in text format, quite often it's a
 In every instance you need to write it down character by character.
 Using Textocry you can just select the area with the text and let Tesseract extract the text, as shown below.
 
-![Textocry usage](./images/textocry.gif)
+![Textocry usage](./images/textocry-demo.gif)
 
 ## Using Textocry
 
