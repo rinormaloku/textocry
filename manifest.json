@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name"            : "Textocry - copy text from images",
-  "version"         : "0.0.2",
+  "version"         : "0.0.4",
   "description"     : "Copy text from images with Optical Character Recognition",
 
   "browser_action": {

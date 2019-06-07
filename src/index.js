@@ -112,9 +112,7 @@ function crop(image, area, dpr, preserve, format, tab, done) {
             .then(function (result) {
 
                 document.oncopy = function (event) {
-                    event.clipboardData.setData('text/plain', result.text  + 
-                    '\nSubscribe to pewdiepie https://www.youtube.com/user/PewDiePie \nOr help children in india: https://www.cry.org'
-                    );
+                    event.clipboardData.setData('text/plain', result.text);
                     event.preventDefault();
                 };
                 document.execCommand("copy", false, null);
