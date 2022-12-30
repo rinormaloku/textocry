@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/rinormaloku/textocry#readme",
   "devDependencies": {
-    "webpack": "^4.27.0",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "tesseract.js": "^1.0.14"
